@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/stylePerfil.css" />
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon" />
+    <title>Perfil</title>
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="perfil">
+                <img src="../img/avatar.png" alt="Foto de perfil">
+                <div class="user-info">
+                    <strong>Samantha</strong>
+                    <p>samantha@email.com</p>
+                </div>
+            </div>
+            <nav class="menu">
+                <a href="perfil.html" class="active">Perfil</a>
+                <a href="formulario.html">Formulário</a>
+                <a href="ListaSorteio.html">Lista de Sorteados</a>
+                <a href="ListaEspera.html">Lista de Espera</a>
+                <a href="sorteio.html">Sorteio</a>
+            </nav>
+        </aside>
+
+        <main class="conteudo">
+            <div class="topo-perfil">
+                <div class="usuario">
+                    <img src="../img/avatar2.png" alt="Alexa">
+                    <div>
+                        <h2>Alexa Rawles</h2>
+                        <p>alexarawles@gmail.com</p>
+                    </div>
+                </div>
+                <button class="btn-editar">Editar</button>
+            </div>
+
+            <form class="formulario">
+                <div class="linha">
+                    <div class="campo">
+                        <label>Seu Nome Completo</label>
+                        <input type="text" value="Samantha Silva" disabled />
+                    </div>
+                    <div class="campo">
+                        <label>Data de Nascimento</label>
+                        <input type="text" value="27/09/1999" disabled />
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="campo">
+                        <label>Sexo</label>
+                        <input type="text" value="Masculino" disabled />
+                    </div>
+                    <div class="campo">
+                        <label>CEP</label>
+                        <input type="text" value="12345-678" disabled />
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="campo">
+                        <label>Rua</label>
+                        <input type="text" value="Rua das Flores" disabled />
+                    </div>
+                    <div class="campo">
+                        <label>Cidade</label>
+                        <input type="text" value="São Paulo" disabled />
+                    </div>
+                </div>
+
+                <div class="email-sec">
+                    <label>Meu E-mail</label>
+                    <div class="email-item">
+                        <img src="../img/email-icon.png" alt="ícone email">
+                        <div>
+                            <p>alexarawles@gmail.com</p>
+                            <span>1 month ago</span>
+                        </div>
+                    </div>
+                    <button class="btn-add" type="button">+ Add Email Address</button>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>

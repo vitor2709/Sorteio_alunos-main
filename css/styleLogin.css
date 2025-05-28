@@ -1,0 +1,114 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background-color: #142661;
+  }
+  
+  /* Layout principal */
+  .center {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Lado esquerdo com logo */
+  .left {
+    width: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-sesc {
+    width: 70%;
+    max-width: 400px;
+  }
+  
+  /* Lado direito com formulário */
+  .right {
+    width: 50%;
+    background-color: #142661;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form {
+    width: 80%;
+    max-width: 400px;
+    color: #fff;
+  }
+  
+  .form h1 {
+    font-size: 32px;
+    margin-bottom: 2rem;
+  }
+  
+  /* Estilo dos campos */
+  .input-box {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .input-box i {
+    color: #142661;
+    margin-right: 10px;
+  }
+  
+  .input-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    color: #142661;
+  }
+  
+  /* Botão */
+  .btn-form {
+    width: 100%;
+    padding: 12px;
+    background-color: #FACC4D;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .btn-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 30px rgba(250, 204, 77, 0.6);
+  }
+  
+  /* Link para cadastro/login */
+  .form-link {
+    margin-top: 1rem;
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .form-link a {
+    color: #FACC4D;
+    text-decoration: none;
+  }
+  
+  .form-link a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 260px;
+    background-color: #0e1c56;
+    color: white;
+    padding: 40px 20px;
+  }
+  
+  .perfil {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .perfil img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .user-info p {
+    font-size: 0.9em;
+    color: #cfcfcf;
+  }
+  
+  .menu a {
+    display: block;
+    color: #cfcfcf;
+    text-decoration: none;
+    padding: 10px 0;
+    transition: 0.3s;
+  }
+  
+  .menu a.active,
+  .menu a:hover {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .conteudo {
+    flex: 1;
+    background-color: white;
+    padding: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow-y: auto;
+  }
+  
+  .topo-perfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .usuario {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .usuario img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+  .btn-editar {
+    background-color: #0e1c56;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .formulario .linha {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .campo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .campo label {
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+  }
+  
+  .campo input {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+  }
+  
+  .email-sec {
+    margin-top: 30px;
+  }
+  
+  .email-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #f4f4f4;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+  
+  .email-item img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .email-item p {
+    margin-bottom: 4px;
+    font-weight: bold;
+  }
+  
+  .email-item span {
+    font-size: 0.8rem;
+    color: #777;
+  }
+  
