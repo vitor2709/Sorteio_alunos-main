@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 260px;
+  background-color: #0e1c56;
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.perfil img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.user-info p {
+  font-size: 0.9em;
+  color: #cfcfcf;
+}
+
+.menu a {
+  display: block;
+  color: #cfcfcf;
+  text-decoration: none;
+  padding: 10px 0;
+  transition: 0.3s;
+}
+
+.menu a.active,
+.menu a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.conteudo {
+  flex: 1;
+  background-color: white;
+  padding: 40px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow-y: auto;
+}
+
+.header-message {
+  background-color: #ffe081;
+  color: #333;
+  font-weight: bold;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.winners-list-section h2 {
+  margin-bottom: 20px;
+  color: #0e1c56;
+}
+
+.winner-item {
+  display: flex;
+  align-items: center;
+  background-color: #0e1c56;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  gap: 15px;
+}
+
+.winner-item span {
+  background-color: #05123d;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.instructions {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.5;
+}
