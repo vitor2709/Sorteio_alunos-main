@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
   <title>Sorteador de alunos</title>
 </head>
 
@@ -28,7 +28,7 @@
     <img class="img-inicial" src="./img/Illustration.png" alt="Foto de crianças aprendendo" />
   </div>
   <div class="caixa-btn">
-    <a href="./pages/cadastro.html" class="btn-inicial">Cadastrar</a>
+    <a href="./pages/cadastro.php" class="btn-inicial">Cadastrar</a>
   </div>
 </body>
 

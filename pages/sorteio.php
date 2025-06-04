@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -20,11 +21,11 @@
                 </div>
             </div>
             <nav class="menu">
-                <a href="perfil.html">Perfil</a>
-                <a href="formulario.html">Formulário</a>
-                <a href="ListaSorteio.html">Lista de Sorteados</a>
-                <a href="ListaEspera.html">Lista de Espera</a>
-                <a href="sorteio.html" class="active">Sorteio</a>
+                <a href="perfil.php">Perfil</a>
+                <a href="formulario.php">Formulário</a>
+                <a href="ListaSorteio.php">Lista de Sorteados</a>
+                <a href="ListaEspera.php">Lista de Espera</a>
+                <a href="sorteio.php" class="active">Sorteio</a>
             </nav>
         </aside>
         <main class="conteudo">
@@ -37,7 +38,7 @@
                 escolha um número que você deseje.
             </p>
             <div class="sorteio-box">
-                <h2>SORTEAR NÚMERO DO ALUNO:</h2>
+                <h2 class="sortear">SORTEAR NÚMERO DO ALUNO:</h2>
                 <div class="inputs">
                     <div>
                         <label>NÚMEROS</label>
@@ -52,7 +53,7 @@
                     <input type="checkbox" id="repetir">
                     <label for="repetir">Não repetir número</label>
                 </div>
-                <a href="ListaSorteio.html" class="btn-sortear">Sortear</a>
+                <a href="ListaSorteio.php" class="btn-sortear">Sortear</a>
                 <div class="form-link"></div>
             </div>
         </main>

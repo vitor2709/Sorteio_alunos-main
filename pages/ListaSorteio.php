@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -20,11 +21,11 @@
                 </div>
             </div>
             <nav class="menu">
-                <a href="perfil.html">Perfil</a>
-                <a href="formulario.html">Formulário</a>
-                <a href="ListaSorteio.html" class="active">Lista de Sorteados</a>
-                <a href="ListaEspera.html">Lista de Espera</a>
-                <a href="sorteio.html">Sorteio</a>
+                <a href="perfil.php">Perfil</a>
+                <a href="formulario.php">Formulário</a>
+                <a href="ListaSorteio.php" class="active">Lista de Sorteados</a>
+                <a href="ListaEspera.php">Lista de Espera</a>
+                <a href="sorteio.php">Sorteio</a>
             </nav>
         </aside>
         <main class="conteudo">

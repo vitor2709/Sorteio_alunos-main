@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/stylePerfil.css" />
+    <link rel="stylesheet" href="../css/styleFormulario.css" />
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon" />
     <title>Perfil</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container"> 
         <aside class="sidebar">
             <div class="perfil">
                 <img src="../img/Profile.png" alt="Foto de perfil">
@@ -20,18 +20,14 @@
                 </div>
             </div>
             <nav class="menu">
-                <a href="perfil.html">Perfil</a>
-                <a href="formulario.html" class="active">Formulário</a>
-                <a href="ListaSorteio.html">Lista de Sorteados</a>
-                <a href="ListaEspera.html">Lista de Espera</a>
-                <a href="sorteio.html">Sorteio</a>
+                <a href="perfil.php">Perfil</a>
+                <a href="formulario.php" class="active">Formulário</a>
+                <a href="ListaSorteio.php">Lista de Sorteados</a>
+                <a href="ListaEspera.php">Lista de Espera</a>
+                <a href="sorteio.php">Sorteio</a>
             </nav>
         </aside>
         <main class="conteudo">
-            <div class="header-main">
-                <div class="notification-dot"></div>
-                <img src="../img/Profile.png" alt="Foto de perfil de Samantha">
-            </div>
             <form class="formulario-aluno">
                 <h2>Informações do aluno</h2>
                 <div class="campo">
@@ -54,7 +50,7 @@
                     <label for="cpf">CPF</label>
                     <input type="text" id="cpf" value="123.456.786-00">
                 </div>
-                <h2>Endereço residencial</h2>
+                <h2 class="enderecoResidencial">Endereço residencial</h2>
                 <div class="campo rua">
                     <label for="rua">Rua</label>
                     <input type="text" id="rua" value="Rua das Flores">
@@ -71,7 +67,7 @@
                     <label for="estado">Estado</label>
                     <input type="text" id="estado" value="SP">
                 </div>
-                <a href="formulario2.html" class="btn-form">Enviar Formulario</a>
+                <a href="formulario2.php" class="btn-form">Enviar Formulario</a>
                 <div class="form-link">
                 </div>
             </form>

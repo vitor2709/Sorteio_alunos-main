@@ -18,21 +18,21 @@
     <div class="right">
       <div class="form">
         <h1>Cadastrar</h1>
-        <form action="cadastro.html" method="POST">
+        <form action="../pages/login.php" method="POST">
           <div class="input-box">
-            <i class="bi bi-person-fill"></i>            <input type="text" placeholder="Nome" />
+            <i class="bi bi-person-fill"></i><input type="text" name="nome" placeholder="Nome" required />
           </div>
           <div class="input-box">
             <i class="bi bi-envelope-fill"></i>
-            <input type="email" placeholder="Seu e-mail" />
+            <input type="email" name="email" placeholder="Seu e-mail" required />
           </div>
           <div class="input-box">
             <i class="bi bi-lock-fill"></i>
-            <input type="password" placeholder="Senha" />
+            <input type="password" name="senha" placeholder="Senha" required />
           </div>
-          <a href="perfil.html" class="btn-form">Cadastrar</a>
+          <button type="submit" class="btn-form">Cadastrar</button>
           <div class="form-link">
-            Já tem uma conta? <a href="login.html">Entrar</a>
+            Já tem uma conta? <a href="login.php">Entrar</a>
           </div>
         </form>
       </div>

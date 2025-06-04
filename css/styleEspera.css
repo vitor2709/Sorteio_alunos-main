@@ -15,27 +15,26 @@ body {
   min-height: 100vh;
 }
 
-/* Sidebar */
 .sidebar {
   width: 260px;
-  background-color: #1d2450;
+  background-color: #0e1c56;
   color: white;
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
-  padding: 2rem 1rem;
 }
 
 .perfil {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 2rem;
+  margin-bottom: 40px;
   position: relative;
 }
 
 .perfil img {
-  width: 55px;
-  height: 55px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 
@@ -83,7 +82,6 @@ body {
   font-weight: bold;
 }
 
-/* Conteúdo principal */
 .conteudo {
   flex: 1;
   padding: 2rem 3rem;
@@ -91,7 +89,6 @@ body {
   border-radius: 25px 0 0 25px;
 }
 
-/* Mensagem de topo */
 .header-message {
   background-color: #ffe082;
   color: #333;
@@ -102,7 +99,10 @@ body {
   margin-bottom: 2rem;
 }
 
-/* Lista */
+.winners-list-section {
+  margin-bottom: 2rem;
+}
+
 .winners-list-section h2 {
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
@@ -110,28 +110,32 @@ body {
 }
 
 .winner-item {
-  background-color: #1d2450;
-  color: white;
-  padding: 0.8rem 1.2rem;
-  margin-bottom: 0.7rem;
-  border-radius: 8px;
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  background-color: #0e1c56;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-bottom: 10px;
   font-size: 1rem;
+  font-weight: 500;
+  gap: 15px;
 }
 
 .winner-item span {
-  background-color: #2e3670;
-  padding: 0.3rem 0.7rem;
-  border-radius: 6px;
+  background-color: #05123d;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
   font-weight: bold;
 }
 
-/* Instruções finais */
 .instructions {
-  margin-top: 2rem;
-  font-size: 0.9rem;
-  color: #555;
-  line-height: 1.5;
+  background-color: #f1f3fa;
+  padding: 1.5rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.6;
+  border-left: 5px solid #1d2450;
 }

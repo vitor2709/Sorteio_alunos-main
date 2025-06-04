@@ -1,3 +1,21 @@
+<?php
+session_start();
+require_once '../assets/data.php';
+
+$stmt = mysqli_prepare($conexao, "SELECT * FROM usuarios");
+    $result = mysqli_stmt_get_result($stmt);
+    $row = mysqli_fetch_assoc($result);
+
+echo $row['nome'];
+
+
+
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -20,11 +38,11 @@
                 </div>
             </div>
             <nav class="menu">
-                <a href="perfil.html">Perfil</a>
-                <a href="formulario.html">Formulário</a>
-                <a href="ListaSorteio.html" >Lista de Sorteados</a>
-                <a href="ListaEspera.html" class="active">Lista de Espera</a>
-                <a href="sorteio.html">Sorteio</a>
+                <a href="perfil.php">Perfil</a>
+                <a href="formulario.php">Formulário</a>
+                <a href="ListaSorteio.php" >Lista de Sorteados</a>
+                <a href="ListaEspera.php" class="active">Lista de Espera</a>
+                <a href="sorteio.php">Sorteio</a>
             </nav>
         </aside>
 

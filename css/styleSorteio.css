@@ -1,133 +1,225 @@
+/* Reset e base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  background-color: #f4f4f4;
+  background-color: #f8f9fd;
 }
 
 .container {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .sidebar {
   width: 260px;
-  background-color: #0e1c56;
+  background-color: #1d2450;
   color: white;
-  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
 }
 
 .perfil {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 2rem;
+  position: relative;
 }
 
 .perfil img {
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
 }
 
+.perfil::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 45px;
+  width: 12px;
+  height: 12px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.user-info strong {
+  font-size: 1.1rem;
+  display: block;
+}
+
 .user-info p {
-  font-size: 0.9em;
-  color: #cfcfcf;
+  font-size: 0.85rem;
+  color: #dcdcdc;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 2rem;
 }
 
 .menu a {
-  display: block;
-  color: #cfcfcf;
+  color: #dcdcdc;
   text-decoration: none;
-  padding: 10px 0;
+  font-weight: 500;
   transition: 0.3s;
 }
 
-.menu a.active,
 .menu a:hover {
+  color: white;
+}
+
+.menu a.active {
   color: white;
   font-weight: bold;
 }
 
+/* Conteúdo principal */
 .conteudo {
   flex: 1;
+  padding: 2rem 3rem;
   background-color: white;
-  padding: 40px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-radius: 25px 0 0 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Cabeçalho */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #1d2450;
+  line-height: 1.3;
 }
 
 .logo-sesc {
-  width: 100px;
+  width: 120px;
 }
 
+/* Descrição */
 .descricao {
-  margin-top: 10px;
-  margin-bottom: 30px;
   font-size: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
   color: #333;
 }
 
+/* Box de sorteio */
 .sorteio-box {
-  background-color: #f9f9f9;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px #ddd;
+  background-color: #f1f3fa;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  width: 100%;
   max-width: 500px;
 }
 
-.sorteio-box h2 {
+.sortear {
   font-size: 1.2rem;
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
+  color: #1d2450;
+  text-align: center;
 }
 
 .inputs {
   display: flex;
-  gap: 20px;
-  margin-bottom: 15px;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.inputs div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .inputs label {
-  font-size: 0.8rem;
-  display: block;
-  margin-bottom: 5px;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+  color: #1d2450;
 }
 
 .inputs input {
-  width: 100px;
-  padding: 10px;
-  font-size: 1.1rem;
-  border-radius: 6px;
+  padding: 0.6rem;
   border: 1px solid #ccc;
-  text-align: center;
+  border-radius: 8px;
+  font-size: 1rem;
 }
 
 .checkbox {
-  margin-bottom: 20px;
-  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  color: #1d2450;
 }
 
 .btn-sortear {
-  background-color: #0e1c56;
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #1d2450;
   color: white;
-  border: none;
-  padding: 12px 30px;
-  font-size: 1rem;
-  border-radius: 6px;
-  cursor: pointer;
+  text-decoration: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  font-weight: bold;
   transition: 0.3s;
 }
 
+
+
 .btn-sortear:hover {
-  background-color: #1e2f75;
+  background-color: #2e3670;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .menu {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .conteudo {
+    border-radius: 0;
+    padding: 2rem 1rem;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-sesc {
+    margin-top: 1rem;
+    width: 100px;
+  }
 }

@@ -1,0 +1,47 @@
+<?php
+// ...existing code...
+
+function registrar_log($mensagem) {
+    $log_dir = __DIR__ . '/../log';
+    if (!is_dir($log_dir)) {
+        mkdir($log_dir, 0777, true);
+    }
+    $arquivo = $log_dir . '/login.log';
+    $data = date('Y-m-d H:i:s');
+    $ip = $_SERVER['REMOTE_ADDR'] ?? 'UNKNOWN';
+    file_put_contents($arquivo, "[$data][$ip] $mensagem\n", FILE_APPEND);
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+    
+    $stmt = mysqli_prepare($conexao, "SELECT * FROM usuarios WHERE email = ?");
+    mysqli_stmt_bind_param($stmt, "s", $email);
+    mysqli_stmt_execute($stmt);
+    $result = mysqli_stmt_get_result($stmt);
+
+    $row = mysqli_fetch_assoc($result);
+
+    if ($row && password_verify($senha, $row['senha'])) {
+        registrar_log("Login bem sucedido para o email: $email");
+        $_SESSION['id'] = $row['id_usuarios'];
+        $_SESSION['nome'] = $row['nome'];
+        $_SESSION['email'] = $row['email'];
+        $_SESSION['mensagem'] = 'Login bem sucedido.';
+        header('Location: ../pages/formulario.php');
+        exit();
+    } else {
+        registrar_log("Falha no login para o email: $email");
+        $_SESSION['mensagem'] = 'Usuário ou senha inválidos.';
+        header('Location: ../pages/login.php');
+        exit();
+    }
+} else {
+    registrar_log("Tentativa de acesso ao login sem POST");
+    $_SESSION['mensagem'] = 'Preencha todos os campos.';
+    header('Location: ../pages/login.php');
+    exit();
+}
+
+// ...existing code...
