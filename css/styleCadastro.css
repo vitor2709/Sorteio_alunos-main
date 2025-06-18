@@ -1,22 +1,16 @@
-/* Reset e base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
   }
-  
   body {
     background-color: #142661;
   }
-  
-  /* Layout principal */
   .center {
     display: flex;
     height: 100vh;
   }
-  
-  /* Lado esquerdo com logo */
   .left {
     width: 50%;
     background-color: #fff;
@@ -29,8 +23,6 @@
     width: 70%;
     max-width: 400px;
   }
-  
-  /* Lado direito com formulário */
   .right {
     width: 50%;
     background-color: #142661;
@@ -38,7 +30,6 @@
     justify-content: center;
     align-items: center;
   }
-  
   .form {
     width: 80%;
     max-width: 400px;

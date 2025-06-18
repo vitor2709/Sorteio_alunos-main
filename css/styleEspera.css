@@ -29,7 +29,6 @@ body {
   align-items: center;
   gap: 10px;
   margin-bottom: 40px;
-  position: relative;
 }
 
 .perfil img {
@@ -38,16 +37,6 @@ body {
   border-radius: 50%;
 }
 
-.perfil::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 45px;
-  width: 12px;
-  height: 12px;
-  background-color: red;
-  border-radius: 50%;
-}
 
 .user-info strong {
   font-size: 1.1rem;

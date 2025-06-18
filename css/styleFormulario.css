@@ -1,173 +1,171 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
-
-  .campo select{
-    padding: 12px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-  
-  body {
-    background-color: #f4f4f4;
-  }
-  
-  .container {
-    display: flex;
-    height: 100vh;
-  }
-  
-  .sidebar {
-    width: 260px;
-    background-color: #0e1c56;
-    color: white;
-    padding: 40px 20px;
-  }
-  
-  .perfil {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 40px;
-  }
-  
-  .perfil img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-  
-  .user-info p {
-    font-size: 0.9em;
-    color: #cfcfcf;
-  }
-  
-  .menu a {
-    display: block;
-    color: #cfcfcf;
-    text-decoration: none;
-    padding: 10px 0;
-    transition: 0.3s;
-  }
-  
-  .menu a.active,
-  .menu a:hover {
-    color: white;
-    font-weight: bold;
-  }
-  
-  .conteudo {
-    flex: 1;
-    background-color: white;
-    padding: 40px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    overflow-y: auto;
-  }
-  
-  .topo-perfil {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-  }
-  
-  .usuario {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
-  
-  .usuario img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-  }
-  
-  .btn-editar {
-    background-color: #0e1c56;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-    font-size: 0.9rem;
-  }
-  
-  .formulario .linha {
-    display: flex;
-    gap: 30px;
-    margin-bottom: 20px;
-  }
-  
-  .campo {
-        padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .campo label {
-    font-size: 0.85rem;
-    margin-bottom: 5px;
-  }
-  
-  .campo input {
-    padding: 12px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    background-color: #f4f4f4;
-  }
-  
-  .email-sec {
-    margin-top: 30px;
-  }
-  
-  .email-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    background-color: #f4f4f4;
-    padding: 12px;
-    border-radius: 6px;
-    margin-top: 10px;
-  }
-  
-  .email-item img {
-    width: 30px;
-    height: 30px;
-  }
-  
-  .email-item p {
-    margin-bottom: 4px;
-    font-weight: bold;
-  }
-  
-  .email-item span {
-    font-size: 0.8rem;
-    color: #777;
-  }
-  
-.enderecoResidencial{
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+body {
+  background-color: #f4f4f4;
 }
 
-.btn-form{
-text-decoration: none;
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+}
+
+.sidebar {
+  width: 260px;
+  background-color: #0e1c56;
+  color: white;
+  padding: 40px 20px;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.perfil img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.user-info p {
+  font-size: 0.9em;
+  color: #cfcfcf;
+}
+
+.menu a {
+  display: block;
+  color: #cfcfcf;
+  text-decoration: none;
+  padding: 10px 0;
+  transition: 0.3s;
+}
+
+.menu a.active,
+.menu a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.conteudo {
+  flex: 1;
+  background-color: white;
+  padding: 40px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow-y: auto;
+}
+
+.formulario-aluno .linha {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.campo {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label {
+  font-size: 0.85rem;
+  margin-bottom: 5px;
+}
+
+.campo input,
+.campo select {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+}
+
+.enderecoResidencial {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.btn-form {
+  text-decoration: none;
   background-color: #0e1c56;
   color: white;
   display: flex;
-height: 50px;
-width: 150px;
-border-radius: 8px;
-align-items: center;
-justify-content: center;
+  height: 50px;
+  width: 150px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .perfil {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .menu {
+    display: flex;
+    gap: 15px;
+  }
+
+  .menu a {
+    padding: 5px 10px;
+  }
+
+  .conteudo {
+    border-radius: 0;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .formulario-aluno .linha {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn-form {
+    width: 100%;
+  }
+
+  .sidebar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu a {
+    width: 100%;
+    text-align: left;
+  }
 }
